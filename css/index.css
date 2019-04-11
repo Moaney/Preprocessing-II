@@ -170,11 +170,13 @@ img {
 }
 nav {
   display: flex;
+  justify-content: flex-end;
 }
 nav a {
-  font-size: 16px;
+  padding: 30px;
   text-decoration: none;
-  padding: 15px;
+  font-size: 2rem;
+  color: black;
 }
 .footer {
   width: 100%;
@@ -185,6 +187,14 @@ nav a {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
+  padding: 20px;
+}
+.home .header {
+  border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+.home .header h1 {
   padding: 20px;
 }
 .home .content-section {
@@ -232,4 +242,15 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  color: white;
+  height: 45px;
+  font-size: 2rem;
+  background-color: teal;
+  width: 190px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
 }

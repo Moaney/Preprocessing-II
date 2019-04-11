@@ -1,6 +1,14 @@
 .home {
 
+.header {
+  border-bottom: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
 
+  h1 {
+    padding: 20px;
+  }
+}
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -57,6 +65,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .destination-btn(white, 45px, 2rem);
+      }
     }
   }
 }// home
