@@ -178,6 +178,12 @@ nav a {
   font-size: 2rem;
   color: black;
 }
+@media (max-width: 500px) {
+  nav a {
+    padding: 25px;
+    margin: auto;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -189,13 +195,31 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    background-color: chocolate;
+  }
+}
 .home .header {
   border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .home .header h1 {
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .home .header h1 {
+    padding: 10px;
+    margin: auto;
+  }
 }
 .home .fun-bus {
   border-bottom: 2px dashed #C0C0C0;
