@@ -1,6 +1,6 @@
 .home {
   @media @mobile {
-    background-color: chocolate;
+    margin: auto;
   }
 
 .header {
@@ -43,12 +43,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   @media @mobile {
-    margin: auto;
-     width: 95%;
-     display: flex;
-     flex-direction: column;
-   }
     
     .text-content {
       width: 48%;
@@ -59,10 +53,16 @@
         width: 95%;
       }
     }
+  }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        margin: auto;
+        width: 95%;
+      }
 
       img {
         border-radius: 10px;
@@ -74,8 +74,11 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
-    @media @phone {
-      background-color: royalblue;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 95%;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -85,6 +88,11 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        margin: auto;
+        width: 95%;
+      }
     }
   }
 
@@ -120,7 +128,6 @@
         margin: auto;
         width: 95%;
         padding: 15px;
-      }
 
       .btn {
         .destination-btn(white, 45px, 2rem);
