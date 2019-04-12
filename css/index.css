@@ -198,9 +198,15 @@ nav a {
 .home {
   max-width: 1000px;
 }
+@media (max-width: 800px) {
+  .home {
+    background-color: salmon;
+  }
+}
 @media (max-width: 500px) {
   .home {
     margin: auto;
+    background-color: purple;
   }
 }
 .home .header {
@@ -314,6 +320,11 @@ nav a {
     flex-direction: column;
   }
 }
+@media (max-width: 800px) {
+  .content-pick {
+    width: 100%;
+  }
+}
 .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
@@ -323,6 +334,12 @@ nav a {
     margin: auto;
     width: 95%;
     padding: 5px;
+  }
+}
+@media (max-width: 800px) {
+  .content-pick .destination {
+    margin: auto;
+    padding: 10px;
   }
 }
 .content-pick .destination .btn {

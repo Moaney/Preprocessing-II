@@ -1,8 +1,13 @@
 .home {
   max-width: 1000px;
 
+  @media @tablet {
+    background-color: salmon;
+  }
+
   @media @mobile {
     margin: auto;
+    background-color: purple;
   }
 
 .header {
@@ -102,6 +107,7 @@
     width: 75%;
     margin: 0 auto 30px;
 
+
     @media @mobile {
       width: 95%;
     }
@@ -122,6 +128,10 @@
       flex-direction: column;
     }
 
+    @media @tablet {
+      width: 100%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
@@ -130,6 +140,11 @@
         margin: auto;
         width: 95%;
         padding: 5px;
+      }
+
+      @media @tablet {
+        margin: auto;
+        padding: 10px;
       }
 
       .btn {
