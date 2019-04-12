@@ -200,13 +200,12 @@ nav a {
 }
 @media (max-width: 800px) {
   .home {
-    background-color: salmon;
+    margin: auto;
   }
 }
 @media (max-width: 500px) {
   .home {
     margin: auto;
-    background-color: purple;
   }
 }
 .home .header {
