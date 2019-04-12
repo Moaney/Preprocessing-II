@@ -195,6 +195,9 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  max-width: 1000px;
+}
 @media (max-width: 500px) {
   .home {
     margin: auto;
@@ -319,23 +322,23 @@ nav a {
   .content-pick .destination {
     margin: auto;
     width: 95%;
-    padding: 15px;
-  }
-  .content-pick .destination .btn {
-    color: white;
-    height: 45px;
-    font-size: 2rem;
-    background-color: teal;
-    width: 190px;
-    padding: 10px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    text-align: center;
+    padding: 5px;
   }
 }
-@media (max-width: 500px) and (max-width: 500px) {
+.content-pick .destination .btn {
+  color: white;
+  height: 45px;
+  font-size: 2rem;
+  background-color: teal;
+  width: 160px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+}
+@media (max-width: 500px) {
   .content-pick .destination .btn {
     margin: auto;
-    width: 350px;
+    width: 250px;
   }
 }
