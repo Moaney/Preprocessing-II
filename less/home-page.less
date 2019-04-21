@@ -1,21 +1,74 @@
 .home {
+  max-width: 1000px;
 
+  @media @tablet {
+    margin: auto;
+  }
+
+  @media @mobile {
+    margin: auto;
+  }
+
+.header {
+  border-bottom: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
+
+  @media @mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    padding: 20px;
+
+    @media @mobile {
+      padding: 10px;
+      margin: auto;
+    }
+  }
+}
+
+.fun-bus {
+  border-bottom: 2px dashed @navigation-border;
+
+  @media @mobile {
+    width: 95%;
+    margin: auto;
+
+  }
+  h2 {
+    margin-top: 20px;
+
+  }
+}
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        margin: auto;
+        width: 95%;
+      }
     }
+  }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        margin: auto;
+        width: 95%;
+      }
 
       img {
         border-radius: 10px;
@@ -27,6 +80,12 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 95%;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -35,12 +94,22 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        margin: auto;
+        width: 95%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+
+    @media @mobile {
+      width: 95%;
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +122,39 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media @tablet {
+      width: 100%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        margin: auto;
+        width: 95%;
+        padding: 5px;
+      }
+
+      @media @tablet {
+        margin: auto;
+        padding: 10px;
+      }
+
+      .btn {
+        .destination-btn (white, 45px, 2rem);
+
+        @media @mobile {
+          margin: auto;
+          width: 250px;
+        }
+
+      }
     }
   }
-}// home
+// home
